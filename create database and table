@@ -5,8 +5,7 @@ use cafe_database //카페 관리 데이터베이스 사용
 //음료 테이블 생성
 create table 음료
 (메뉴 varchar(40) not null, 
-가격 varchar(40) not null, 
-사이즈 varchar(40) not null, 
+가격 varchar(40) not null,
 재료 varchar(40) not null);
 
 //직원 테이블 생성

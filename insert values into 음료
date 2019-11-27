@@ -1,0 +1,46 @@
+mysql> insert into 음료 (메뉴,가격,재료) values ('아메리카노','2,000원','커피,물');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('카페라떼','2,500원','커피,우유');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('카페모카','3,000원','커피,초콜릿,우유');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('카라멜마키아또','3,000원','커 피,카라멜,우유');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('핫초코','2,500원','초콜릿,우유');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('스팀밀크','2,000원','우유,시럽');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('레몬에이드','3,000원','레몬,탄산수');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('복숭아아이스티','3,000원','복 숭아,얼그레이,물');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('얼그레이티','2,500원','얼그레 이,물');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into 음료 (메뉴,가격,재료) values ('밀크티','3,000원','얼그레이,우유,시럽');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from 음료;
++-----------------------+----------+----------------------------+
+| 메뉴                  | 가격     | 재료                       |
++-----------------------+----------+----------------------------+
+| 아메리카노            | 2,000원  | 커피,물                    |
+| 카페라떼              | 2,500원  | 커피,우유                  |
+| 카페모카              | 3,000원  | 커피,초콜릿,우유           |
+| 카라멜마키아또        | 3,000원  | 커피,카라멜,우유           |
+| 핫초코                | 2,500원  | 초콜릿,우유                |
+| 스팀밀크              | 2,000원  | 우유,시럽                  |
+| 레몬에이드            | 3,000원  | 레몬,탄산수                |
+| 복숭아아이스티        | 3,000원  | 복숭아,얼그레이,물         |
+| 얼그레이티            | 2,500원  | 얼그레이,물                |
+| 밀크티                | 3,000원  | 얼그레이,우유,시럽         |
++-----------------------+----------+----------------------------+
+10 rows in set (0.00 sec)

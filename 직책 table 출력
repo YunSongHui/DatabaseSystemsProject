@@ -1,0 +1,20 @@
+package table출력;
+
+import java.sql.*;
+
+public class 직책table출력 {
+	public static void main(String args[]) {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://192.168.74.3:4567/cafe_database", 
+					"newsonghui", "dbsthdgml");
+			Statement stmt = con.createStatement();
+			ResultSet rs = stmt.executeQuery("SELECT * FROM 직책");
+			while (rs.next())
+				System.out.println(rs.getString(1));
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+}

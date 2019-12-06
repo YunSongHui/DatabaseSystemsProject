@@ -1,0 +1,27 @@
+mysql> create table 직책 (직책명  varchar(10) not null);
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> drop table 직책;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> create table 직책 (직책명  varchar(10) not null);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into 직책 (직책명) values ('점장');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into 직책 (직책명) values ('매니저');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into 직책 (직책명) values ('아르바이트');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from 직책;
++-----------------+
+| 직책명          |
++-----------------+
+| 점장            |
+| 매니저          |
+| 아르바이트      |
++-----------------+
+3 rows in set (0.00 sec)
